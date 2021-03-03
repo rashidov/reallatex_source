@@ -1,0 +1,140 @@
+.delivery__block {
+  display: flex;
+  flex-direction: column;
+  color: #373737;
+  opacity: 0;
+  animation: delivery 300ms ease both;
+}
+
+@keyframes delivery {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.delivery__block--title {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.delivery__block--content,
+.delivery__block--content__description--Russia,
+.delivery__block--content__description--SNG {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery__block--content__description--SNG {
+  margin-bottom: 40px;
+}
+
+.delivery__block--content__description--wrning {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.delivery__block--content__description--wrning__content {
+  width: 50%;
+  padding: 10px;
+  border: 3px dashed #efefef;
+  border-radius: 10px;
+}
+
+.delivery__block--content__description--Russia__title,
+.delivery__block--content__description--SNG__title {
+  display: flex;
+  font-size: 27px;
+}
+
+.delivery__block--content__description--Russia__title--num,
+.delivery__block--content__description--SNG__title--num {
+  display: inline-block;
+  margin-right: 40px;
+  height: 47px;
+  width: 47px;
+  line-height: 47px;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #43a047;
+}
+
+.delivery__block--content__description--Russia__content,
+.delivery__block--content__description--SNG__content {
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+.delivery__block--content__description--Russia__content p,
+.delivery__block--content__description--SNG__content p {
+  margin: 20px 0px;
+}
+
+@media (max-width: 1370px){
+
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 760px){
+  .delivery__block--title h2 {
+    font-size: 20px;
+  }
+
+  .delivery__block--content__description--Russia__title--num,
+  .delivery__block--content__description--SNG__title--num {
+    display: inline-block;
+    margin-right: 40px;
+    height: 27px;
+    width: 27px;
+    line-height: 27px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background: #43a047;
+  }
+
+  .delivery__block--content__description--Russia__title,
+  .delivery__block--content__description--SNG__title {
+    display: flex;
+    font-size: 19px;
+  }
+
+  .delivery__block--content__description--Russia__content,
+  .delivery__block--content__description--SNG__content {
+    font-size: 16px;
+    margin-left: 20px;
+  }
+
+  .delivery__block--content__description--wrning__content {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px){
+  .delivery__block--content__description--Russia__title,
+  .delivery__block--content__description--SNG__title {
+    display: flex;
+    font-size: 17px;
+  }
+
+  .delivery__block--content__description--Russia__content,
+  .delivery__block--content__description--SNG__content {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .delivery__block--content__description--wrning__content {
+    font-size: 12px;
+  }
+}

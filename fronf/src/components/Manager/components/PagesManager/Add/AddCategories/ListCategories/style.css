@@ -1,0 +1,9 @@
+.listcategories__block {
+  display: flex;
+}
+
+.listcategories__block ul li ul {
+  margin: 10px 0px;
+  padding: 10px;
+  border: 1px dashed #adadad;
+}

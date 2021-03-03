@@ -1,0 +1,40 @@
+.App{
+  /*   display: flex; */
+    padding-left: 6.3%;
+    padding-right: 6.3%;
+    margin: 0 auto;
+    max-width: 1700px;
+    min-height: 100%;
+  }
+  
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  
+  input:-webkit-autofill {
+    color: #ffffff !important;
+  }
+  
+  @media (max-width: 1370px){
+    .apps__container{
+      max-width: 1360px;
+    }
+  }
+  
+  @media (max-width: 992px){
+    .apps__container{
+      max-width: 980px;
+    }
+  }
+  
+  @media (max-width: 760px){
+    .apps__container{
+      max-width: 750px;
+    }
+  }
+  
+  @media (max-width: 410px){
+    .apps__container{
+      max-width: 400px;
+    }
+  }

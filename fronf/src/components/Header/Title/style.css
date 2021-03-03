@@ -1,0 +1,145 @@
+.header__title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.header__title--logo {
+  display: flex;
+  width: 35%;
+  height: 100px;
+}
+
+.header__title--logo a {
+  width: 100%;
+  height: 100px;
+}
+
+.header__title--logo img {
+  height: 100px;
+  object-fit: contain;
+}
+
+.header__title--contacts {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 60%;
+  color: #89cd8a;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.header__title--card {
+  display: flex;
+  width: 5%;
+}
+
+.header__title--card a {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  text-decoration: none;
+  color: #373737;
+}
+
+.header__title--card i {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header__title--contacts--number,
+.header__title--contacts--mail {
+  text-align: right;
+}
+
+@media (max-width: 1370px){
+
+}
+
+@media (max-width: 992px){
+  .header__title--logo {
+    width: 45%;
+  }
+
+  .header__title--logo img {
+    max-width: 100%;
+  }
+
+  .header__title--contacts {
+    display: flex;
+    justify-content: flex-end;
+    width: 48%;
+    font-size: 16px;
+  }
+
+  .header__title--card {
+    width: 7%;
+  }
+}
+
+@media (max-width: 760px){
+  .header__title--logo {
+    width: 53%;
+  }
+
+  .header__title--contacts {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    font-size: 14px;
+  }
+
+  .header__title--card {
+    width: 7%;
+  }
+
+  .header__title--card i {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 420px){
+  .header__title--logo {
+    width: 60%;
+  }
+
+/*   .header__title--contacts {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    font-size: 12px;
+  } */
+
+  .header__title--contacts {
+    display: none;
+  }
+
+  .header__title--card {
+    width: 40%;
+  }
+
+  .header__title--card i {
+    font-size: 20px;
+  }
+}
+
+
+
+
+/* @media (max-width: 1370px){
+
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 760px){
+
+}
+
+@media (max-width: 400px){
+
+} */

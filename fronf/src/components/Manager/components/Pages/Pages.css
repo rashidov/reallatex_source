@@ -1,0 +1,324 @@
+.pages {
+  margin-top: 40px;
+  color: #373737;
+}
+
+/* STYLES label input button icon */
+
+.labels {
+  font-size: 17px;
+}
+
+.inputs {
+  height: 25px;
+  width: 99%;
+  margin: 10px 0px;
+  border: 1px solid #43a047;
+  border-radius: 5px;
+}
+
+.buttons {
+  height: 30px;
+  width: 200px;
+  margin: 10px 0px;
+  background: #43a047;
+  border: 1px solid #43a047;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 16px;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+/* =============================== */
+
+/* ===================== STYLE categories ===================== */
+
+.pages__categories {
+  display: flex;
+}
+
+/* STYLES categories form */
+
+.pages__categories--categories__form {
+  width: 24%;
+  height: 500px;
+  padding: 10px 20px;
+  background: #37373714;
+  border-radius: 5px;
+}
+
+.pages__categories--categories__form select {
+  height: 25px;
+  width: 200px;
+  margin: 10px 0px;
+  border: 1px solid #43a047;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* ====================== */
+
+
+/* STYLES subcategories */
+
+.pages__categories--subcategories__form {
+  width: 24%;
+  height: 500px;
+  padding: 10px 20px;
+  background: #37373714;
+  border-radius: 5px;
+  margin-left: 10px;
+/*   border-right: 5px solid #43a047;
+  padding-right: 10px; */
+}
+
+/* ==================== */
+
+/* STYLES list categorise and subcategories */
+
+.pages__categories--list {
+  width: 50%;
+  padding: 10px 20px;
+  background: #37373714;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.pages__categories--list .icon {
+  margin-left: 20px;
+}
+
+.pages__categories--list__category {
+  display: flex;
+  border: 1px dashed #373737;
+  padding: 10px 10px;
+  margin-top: 20px;
+}
+
+
+.category__info {
+  width: 95%;
+  font-size: 15px;
+}
+
+.category__info span {
+  font-size: 20px;
+}
+
+.category__info span .not__subcategory {
+  font-size: 15px;
+}
+
+.category__del {
+  width: 5%;
+}
+
+.category__del i {
+  font-size: 30px;
+}
+
+
+.pages__categories--list__subcategory {
+  display: flex;
+  border: 1px dashed #37373724;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+
+.subcategory__info {
+  width: 95%;
+  font-size: 13px;
+}
+
+.subcategory__info span {
+  font-size: 18px;
+}
+
+.subcategory__del {
+  width: 5%;
+}
+
+/* ======================================== */
+/* ============================================================ */
+
+
+
+/* ===================== STYLE product ==================== */
+
+/* .pages__products {
+  display: flex;
+} */
+
+/* STYLES add product */
+
+.pages__products--add_product form {
+  display: flex;
+  width: 100%;
+}
+
+.pages__products--add_product--form__lfet_part {
+  width: 50%;
+  font-size: 13px;
+}
+
+.pages__products--add_product--form__right_part {
+  width: 50%;
+  font-size: 13px;
+}
+
+.pages__products--add_product--form__lfet_part .inputs {
+  height: 19px;
+  width: 450px;
+  margin: 0;
+}
+
+.pages__products--add_product--form__right_part .inputs {
+  height: 19px;
+  width: 500px;
+  margin: 0;
+}
+
+.pages__products--add_product--form__right_part .imgs {
+  width: 350px;
+}
+
+/* ================== */
+
+/* STYLES search product */
+
+.pages__products--search {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px dashed #373737;
+}
+
+.pages__products--search__products {
+  width: 100%;
+}
+
+.pages__products--search__products input {
+  width: 100%;
+}
+
+.pages__products--list__products {
+  width: 100%;
+}
+
+.pages__products--list {
+  margin-top: 20px;
+}
+
+.product {
+  display: flex;
+  margin-top: 25px;
+  padding: 10px;
+  border: 1px dashed #373737;
+}
+
+.product__info {
+  width: 75%;
+  font-size: 15px;
+}
+
+.product__info span {
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.product__info .url {
+  font-size: 14px;
+}
+
+.product__info .inf {
+  font-size: 16px;
+}
+
+.product__info p {
+  width: 90%;
+  font-size: 13px;
+  border: 1px dashed #37373725;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.product__img {
+  width: 20%;
+}
+
+.product__img img {
+  width: 200px;
+}
+
+.product__info--img img {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.product__del {
+  width: 5%;
+}
+
+.product__del i {
+  font-size: 30px;
+}
+
+/* ===================== */
+
+/* STYLE edit product */
+
+.pages__products--edit {
+  display: flex;
+}
+
+.pages__products--edit__old__product {
+  width: 50%;
+}
+
+.section {
+  display: flex;
+  margin-top: 20px;
+  border-bottom: 1px dashed #37373725;
+  padding: 10px 0;
+}
+
+.pages__products--edit__title {
+  font-size: 18px;
+  width: 50%;
+}
+
+.pages__products--edit__img {
+  margin-left: 25%;
+}
+
+.pages__products--edit__img img {
+  width: 140px;
+}
+
+.pages__products--edit__fulldescription {
+  width: 100%;
+}
+
+.pages__products--edit__gallery img {
+  padding: 5px;
+}
+
+.pages__products--form__edit--fulldescription {
+  display: flex;
+}
+
+.pages__products--form__edit--fulldescription textarea {
+  width: 100%;
+}
+
+.pages__products--edit__new__product {
+  width: 50%;
+  padding-left: 10px;
+  border-left: 1px dashed #373737;
+}
+
+/* ================== */
+
+/* ========================================================= */

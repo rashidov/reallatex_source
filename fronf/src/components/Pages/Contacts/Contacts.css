@@ -1,0 +1,115 @@
+.contacts__block {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  color: #373737;
+  opacity: 0;
+  animation: contacts 300ms ease both;
+}
+
+@keyframes contacts {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.contacts__block--title {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.contacts__block--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__block--content__title {
+  font-size: 20px; 
+  margin-bottom: 30px;
+}
+
+.contacts__block--content__phone,
+.contacts__block--content__mail {
+  display: flex;
+}
+
+.contacts__block--content__phone--text,
+.contacts__block--content__mail--text {
+  width: 50%;
+  font-size: 18px;
+}
+
+.contacts__block--content__phone--text li,
+.contacts__block--content__mail--text li {
+  list-style-type: circle;
+  padding: 10px;
+  height: 90px;
+}
+
+.contacts__block--content__phone--img,
+.contacts__block--content__mail--img {
+  width: 50%;
+  padding-top: 60px;
+}
+
+.contacts__block--content__line {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  margin: 40px 60px;
+  border-left: 3px dashed #efefef;
+  border-bottom: 3px dashed #efefef;
+}
+
+@media (max-width: 1100px){
+  .contacts__block--content__line {
+    width: 300px;
+  }
+}
+
+@media (max-width: 992px){
+  .contacts__block--content__line {
+    width: 250px;
+  }
+}
+
+@media (max-width: 760px){
+  .contacts__block--title h2 {
+    font-size: 20px;
+  }
+
+  .contacts__block--content__line {
+    display: none;
+  }
+
+}
+
+@media (max-width: 420px){
+
+  .contacts__block--content__phone,
+  .contacts__block--content__mail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts__block--content__phone--text,
+  .contacts__block--content__mail--text {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contacts__block--content__phone--img,
+  .contacts__block--content__mail--img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,186 @@
+header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 7px;
+  color: #373737;
+}
+
+
+
+/* .logo{
+  height: 100px;
+  width: 35%;
+  background-image: url("../assets//img/RealLatex-logo.png");
+  background-image: url("https://i.ibb.co/3fMLq93/Real-Latex-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo a{
+  width: 35%;
+  height: 100px;
+} */
+
+.logo {
+  display: flex;
+  width: 35%;
+}
+
+.logo img{
+  /* width: 100%; */
+  height: 100px;
+  object-fit: contain;
+}
+
+.menu__homePage{
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item{
+  align-items: center;
+  justify-content: left;
+  font-size: 17px;
+}
+
+.nav__item a{
+  display: flex;
+  text-decoration: none;
+  color: #373737;
+}
+
+.nav__item i{
+  font-size: 27px;
+  margin-right: 5px;
+}
+
+.card__homePage{
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.card__homePage a {
+  color: #373737;
+  text-decoration: none;
+}
+
+.card__homePage a:hover{
+  opacity: 0.8;
+}
+
+.card__homePage i{
+  font-size: 27px;
+}
+
+.menu__homePageMobile{
+  display: none;
+}
+
+@media (max-width: 1370px){
+
+  .logo{
+    height: 90px;
+    width: 100%;
+  }
+
+  .menu__homePage{
+    display: none;
+  }
+
+  .card__homePage{
+    display: none;
+  }
+
+  .menu__homePageMobile{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .menu__homePageMobile i{
+    padding-right: 15px;
+    color: #373737;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px){
+
+  .logo{
+    height: 130px;
+    width: 100%;
+  }
+
+  .logo img {
+    max-width: 100%;
+  }
+
+  .menu__homePage{
+    display: none;
+  }
+
+  .card__homePage{
+    display: none;
+  }
+
+  .menu__homePageMobile{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .menu__homePageMobile i{
+    padding-right: 15px;
+    color: #373737;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 760px){
+  .header__menu {
+    display: none;
+  }
+
+  .header__menuline {
+    display: flex;
+  }
+}
+
+@media (max-width: 410px){
+  .logo{
+    height: 71px;
+    width: 85%;
+  }
+
+  .menu__homePage{
+    display: none;
+  }
+
+  .card__homePage{
+    display: none;
+  }
+
+  .menu__homePageMobile{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .menu__homePageMobile i{
+    padding-right: 15px;
+    color: #373737;
+    font-size: 50px;
+  }
+}

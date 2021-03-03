@@ -1,0 +1,135 @@
+.choosemattress__block {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  color: #373737;
+  opacity: 0;
+  animation: choosemattress 300ms ease both;
+}
+
+@keyframes choosemattress {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.choosemattress__block--titile {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.choosemattress__block--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.choosemattress__block--content__item {
+  margin: 30px 0px;
+}
+
+.choosemattress__block--content__item--main,
+.choosemattress__block--content__description--main {
+  display: flex;
+  align-items: center;
+}
+
+.choosemattress__block--content__item--num,
+.choosemattress__block--content__description--num {
+  display: inline-block;
+  margin-right: 40px;
+  height: 47px;
+  width: 47px;
+  line-height: 47px;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #43a047;
+}
+
+.choosemattress__block--content__item--title,
+.choosemattress__block--content__description--title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.choosemattress__block--content__item--text,
+.choosemattress__block--content__description--text {
+  font-size: 18px;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.choosemattress__block--content__item--img {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.choosemattress__block--content__item--img img {
+  border: 10px solid #efefef;
+  border-radius: 10px;
+}
+
+.choosemattress__block--content__item--img__all img {
+  margin-right: 10px;
+}
+
+@media (max-width: 1370px){
+  .mtrs1 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px){
+  .choosemattress__block--content__item--img__all {
+    text-align: center;
+  }
+
+  .choosemattress__block--content__item--img__all img {
+    width: 10%;
+  }
+
+  .mtrs2, .mtrs3 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 760px){
+  .choosemattress__block--titile h2 {
+    font-size: 20px;
+  }
+
+  .choosemattress__block--content__item--title {
+    font-size: 18px;
+  }
+
+  .choosemattress__block--content__item--text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 560px){
+  .choosemattress__block--content__item--num {
+    display: none;
+  }
+
+  .choosemattress__block--content__item--text {
+    margin: 0;
+  }
+}
+
+@media (max-width: 400px){
+  .choosemattress__block--content__item--title {
+    font-size: 16px;
+  }
+
+  .choosemattress__block--content__item--text {
+    font-size: 14px;
+    margin: 0;
+  }
+}

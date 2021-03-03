@@ -1,0 +1,36 @@
+.delete__block {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: delete 400ms ease both;
+}
+
+@keyframes delete {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.delete__block a {
+  margin: 20px;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #373737;
+  background: #fff;
+  border: 1px solid #43A047;
+  border-radius: 5px;
+  transition: color .5s linear;
+  transition: background .5s linear;
+}
+
+.delete__block a:hover {
+  color: #fff;
+  background: #43A047;
+  border: 1px solid #fff;
+  text-decoration: none;
+}

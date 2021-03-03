@@ -1,0 +1,160 @@
+.smell__block {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  color: #373737;
+  opacity: 0;
+  animation: smell 300ms ease both;
+}
+
+@keyframes smell {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.smell__block--title {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.smell__block--content,
+.smell__block--content--item,
+.smell__block--content--item__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.smell__block--content--item {
+  margin: 30px 0px;
+}
+
+.smell__block--content--item__title {
+  display: flex;
+}
+
+.smell__block--content--item__title--num {
+  display: inline-block;
+  margin-right: 40px;
+  height: 47px;
+  width: 47px;
+  line-height: 47px;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #43a047;
+}
+
+.smell__block--content--item__title span {
+  font-size: 27px;
+}
+
+.smell__block--content--item__content {
+  display: flex;
+}
+
+.smell__block--content--item__conten--text {
+  font-size: 20px;
+  margin: 10px 30px;
+  padding-top: 20px;
+}
+
+.smell__block--content--item__conten--text li {
+  list-style-type: circle;
+  color: #43a047;
+}
+
+.smell__block--content--item__conten--img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 30px;
+}
+
+.smell__block--content--item__conten--img img {
+  border: 10px solid #efefef;
+  border-radius: 10px;
+}
+
+
+.smell__block--content--item__desription span {
+  color: #43a047;
+}
+
+.smell__block--content--item__desription .description__bottom--img {
+  text-align: center;
+}
+
+.smell__block--content--item__desription--result {
+  display: flex;
+  margin: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #43a047;
+}
+
+@media (max-width: 1370px){
+  .smell__block--content--item__conten--img {
+    margin: 0;
+  }
+}
+
+@media (max-width: 992px){
+  .smell__block--content--item__conten--img img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 760px){
+  .smell__block--title h2 {
+    font-size: 20px;
+  }
+
+  .smell__block--content--item__title--num {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .smell__block--content--item__title span {
+    font-size: 18px;
+  }
+
+  .smell__block--content--item__conten--text {
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+
+  .smell__block--content--item__desription--result {
+    margin: 10px 0px;
+  }
+}
+
+@media (max-width: 400px){
+  .smell__block--content--item {
+    margin: 5px 0px;
+  }
+
+  .smell__block--content--item__title--num {
+    display: none;
+  }
+
+  .smell__block--content--item__title span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .smell__block--content--item__conten--text {
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+}

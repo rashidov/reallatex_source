@@ -1,0 +1,134 @@
+.difference__block {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  color: #373737;
+  opacity: 0;
+  animation: difference 300ms ease both;
+}
+
+@keyframes difference {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.difference__block--title {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.difference__block--content,
+.difference__block--content--item,
+.difference__block--content--item__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.difference__block--content--item {
+  margin: 30px 0px;
+}
+
+.difference__block--content--item__title {
+  display: flex;
+  align-items: center;
+}
+
+.difference__block--content--item__title--num {
+  display: inline-block;
+  margin-right: 40px;
+  height: 47px;
+  width: 47px;
+  line-height: 47px;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #43a047;
+}
+
+.difference__block--content--item__title span {
+  font-size: 27px;
+}
+
+.difference__block--content--item__content {
+  margin: 20px 0px;
+}
+
+.difference__block--content--item__content--text {
+  margin: 10px 30px;
+  font-size: 20px;
+}
+
+.difference__block--content--item__content--text a {
+  color: #43a047;
+}
+
+
+
+
+.difference__block--content--item__content--img {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.difference__block--content--item__content--img img {
+  width: 600px;
+  max-width: 400px;
+  margin: 10px 10px;
+  border: 10px solid #efefef;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 1370px){
+  .difference__block--content--item__content--img {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px){
+  .difference__block--content--item__content--img img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 760px){
+  .difference__block--title h2 {
+    font-size: 20px;
+  }
+
+  .difference__block--content--item__title--num {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .difference__block--content--item__title span {
+    font-size: 18px;
+  }
+
+  .difference__block--content--item__content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px){
+  .difference__block--content--item__title span {
+    font-size: 16px;
+  }
+
+  .difference__block--content--item__content p {
+    font-size: 14px;
+  }
+}

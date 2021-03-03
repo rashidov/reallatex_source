@@ -1,0 +1,135 @@
+.choosepillow__block {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  color: #373737;
+  opacity: 0;
+  animation: choosepillow 300ms ease both;
+}
+
+.choosepillow__block--title {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.choosepillow__block--content--item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.choosepillow__block--content--item__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.choosepillow__block--content--item__content {
+  display: flex;
+}
+
+.choosepillow__block--content--item__content--text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.choosepillow__block--content--item__content--buttons {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.choosepillow__block--content--item__content--result {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.choosepillow__block--content--item__content--result a {
+  color: #fff;
+  background: #43a047;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0;
+  animation: choosepillow 300ms ease both;
+}
+
+.choosepillow__block--content--item__content--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 200px;
+  margin: 10px;
+  background: #43a047;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  animation: choosepillow 300ms ease both;
+}
+
+.choosepillow__block--content--item__content--button:hover {
+  opacity: 0.8;
+}
+
+.link__result {
+  display: flex;
+  margin-top: 10px;
+  animation: choosepillow 300ms ease both;
+}
+
+
+
+@media (max-width: 1370px){
+
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 760px){
+  .choosepillow__block--title h2 {
+    font-size: 20px;
+  }
+
+  .choosepillow__block--content--item__title {
+    font-size: 18px;
+  }
+
+  .choosepillow__block--content--item__content--text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px){
+  .choosepillow__block--content--item__content {
+    flex-direction: column;
+  }
+
+  .choosepillow__block--content--item__content--buttons {
+    display: flex;
+    width: 100%;
+    align-items: center;    
+  }
+
+  .choosepillow__block--content--item__content--result {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@keyframes choosepillow {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,128 @@
+.mattressthickness__block {
+  display: flex;
+  min-height: 80vh;
+  flex-direction: column;
+  color: #373737;
+  opacity: 0;
+  animation: mattressthickness 300ms ease both;
+}
+
+@keyframes mattressthickness {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.mattressthickness__block--title {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.mattressthickness__block--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mattressthickness__block--content__item {
+/*   display: flex; */
+  margin: 30px 0px;
+}
+
+.mattressthickness__block--content__item--main,
+.mattressthickness__block--content__description--main {
+  display: flex;
+  align-items: center;
+}
+
+.mattressthickness__block--content__item--num,
+.mattressthickness__block--content__description--num {
+  display: inline-block;
+  margin-right: 40px;
+  height: 47px;
+  width: 47px;
+  line-height: 47px;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #43a047;
+}
+
+.mattressthickness__block--content__item--title,
+.mattressthickness__block--content__description--title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mattressthickness__block--content__item--text,
+.mattressthickness__block--content__description--text {
+  font-size: 18px;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+.mattressthickness__block--content__description {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 4px dashed #efefef;
+}
+
+.mattressthickness__block--content__item--img,
+.mattressthickness__block--content__description--media {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.mattressthickness__block--content__item--img img,
+.mattressthickness__block--content__description--media img {
+  width: 640px;
+  height: 390px;
+  margin-bottom: 30px;
+  /* margin-bottom: 50px; */
+}
+
+@media (max-width: 1370px){
+  .mattressthickness__block--content__item--img,
+  .mattressthickness__block--content__description--media {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 760px){
+  .mattressthickness__block--title h2 {
+    font-size: 20px;
+  }
+
+  .mattressthickness__block--content__item--title,
+  .mattressthickness__block--content__description--title {
+    font-size: 18px;
+  }
+
+  .mattressthickness__block--content__item--text,
+  .mattressthickness__block--content__description--text {
+    font-size: 16px;
+  }
+
+  .mattressthickness__block--content__item--img img,
+  .mattressthickness__block--content__description--media img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px){
+  .mattressthickness__block--content__item--num,
+  .mattressthickness__block--content__description--num {
+    display: none;
+  }
+}

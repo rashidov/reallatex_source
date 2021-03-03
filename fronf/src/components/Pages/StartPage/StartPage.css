@@ -1,0 +1,435 @@
+.start__page {
+  opacity: 0;
+  animation: startPage 300ms ease both;
+}
+
+@keyframes startPage {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.content {
+  /* margin-top: 20px; */
+  /* border-top: #43A047 solid 7px; */
+}
+
+.content a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.content__main {
+  /* margin-top: 40px; */
+  width: 100%;
+}
+
+.content__main--blockSearchAndCatalogButton{
+  display: flex;
+  align-items: center;
+/*   margin-left: 6.3%;
+  margin-right: 6.3%; */
+  height: 300px;
+  /* background-image: url("https://famt.ru/wp-content/uploads/2019/09/k-chemu-snitsya-stelit-postel-tolkovanie-snovideniya.jpg"); */
+  background-image: url("../../assets/img/main-img-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;                          /* Возможно нужно будет посмотреть! */
+  background-position: center;
+  border-radius: 5px;
+}
+
+.content__main--icon{
+  display: none;
+  color: #000000;
+  font-size: 25px;
+  /* opacity: 0; */
+}
+
+.content__main--icon:hover{
+  cursor: pointer;
+}
+
+.search__block--content{
+  display: none;
+  width: 700px;
+  height: 700px;
+  margin-top: 50px;
+  margin-left: 300px;
+  overflow: auto;
+  /* z-index: 0; */
+}
+
+.search__block--item{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid #43A047;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search__block--item:hover{
+  opacity: .7;
+}
+
+.search__block--item:hover h4{
+text-decoration: underline;
+}
+
+.search__block--item img {
+  width: 250px;
+  height: 200px;
+}
+
+.search__block--item h4 {
+  color: #43A047;
+  margin-left: 10px;
+}
+
+.content__main--Button{
+  display: flex;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+  padding: 5px;
+  background: #ffffff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.content__main--Button:hover{
+  cursor: pointer;
+}
+
+.content__main--Button i {
+  margin-right: 20px;
+  color: #43A047;
+}
+
+.content__main--Search{
+  display: flex;
+  width: 400px;
+  height: 40px;
+  margin-left: 30px;
+  background: #ffffff;
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+.content__main--Search input{
+  border: 0;
+  width: 100%;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.content__main--Search button {
+  margin: 3px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+  border: none; 
+  outline: none;
+  background: #43A047;
+  color: #ffffff;
+  font-size: 5px;
+  border-radius: 5px;
+  transition-property: opacity;
+  transition-duration: 3s;
+}
+
+
+
+.content__info {
+  margin: 60px 0px;
+}
+
+.content__info--title {
+  width: 100%;
+  margin-left: 10px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #373737;
+}
+
+.content__info--link {
+  margin: 0 20px;
+}
+
+.content__info--link span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #373737;
+}
+
+.inf {
+  margin: 30px 0;
+}
+
+.inf a {
+  margin-left: 10px;
+  padding: 4px 35px;
+  border: 1px solid #43A047;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.inf a:hover {
+  background: #43A047;
+  color: #ffffff;
+}
+
+.content__info--link__info__company--url {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link__questions--url {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.content__info--link__questions_products--url {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.content__categories{
+  margin: 20px 6.3%;
+}
+
+.slick-slider button::before{
+  color: #000000;
+}
+
+.content__categories--item{
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  margin-right: 20px;
+  max-width: 100%;
+  min-height: 240px;
+  background: #f2f3f5;
+  border-radius: 5px;
+}
+
+.content__categories--item h5{
+  font-size: 18px;
+}
+
+.content__categories--item p{
+  text-align: center;
+}
+
+.content__categories--item:hover{
+  cursor: pointer;
+  background-color: #e9e9ed;
+}
+
+.content__categories--item__img {
+  display: flex;
+  margin-top: 40%;
+  justify-content: flex-end;
+}
+
+.content__categories--item img{
+
+  max-width: 50%;
+}
+
+.content__categories--item p{
+  margin: 0;
+  font-size: 13px;
+}
+
+
+.content__other {
+  margin-bottom: 40px;
+}
+
+.carousel__wrapper{
+  display: flex;
+}
+
+.carousel__content{
+  width: 65%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.carousel__img{
+  width: 35%;
+}
+
+/* .slick-dots li,
+.carousel-control-prev, 
+.carousel-control-next {
+  display: none;
+} */
+
+.carousel-indicators {
+  margin-bottom: 0;
+}
+
+.carousel-indicators li {
+  background-color: #000000;
+}
+
+@media (max-width: 1370px){
+  .content__main{
+    margin-top: 20px;
+  }
+
+/*   .content__categories{
+    display: none;
+  } */
+
+  .content__other{
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .carousel ol{
+    display: none;
+  }
+}
+
+@media (max-width: 992px){
+  .content__main{
+    margin-top: 20px;
+  }
+
+/*   .content__categories{
+    display: none;
+  } */
+
+  .content__other{
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .carousel ol{
+    display: none;
+  }
+
+  .inf a {
+    padding: 2px 5px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px){
+  .content__main{
+    margin-top: 20px;
+  }
+
+/*   .content__categories{
+    display: none;
+  } */
+
+  .content__other{
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .carousel ol{
+    display: none;
+  }
+
+  .search__block{
+    display: none;
+  }
+
+  .content__main--Button{
+    margin:0px auto;
+    margin-left: 50%;
+  }
+
+  .carousel__wrapper{
+    display: block;
+  }
+
+  .carousel__content{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  .carousel__content h3 {
+    font-size: 20px;
+  }
+
+  .carousel__img{
+    width: 100%;
+  }
+
+  .content__info--title {
+    font-size: 19px;
+  }
+
+  .content__info--link__questions span {
+    font-size: 17px;
+  }
+
+  .inf a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 400px){
+  .search__block{
+    display: none;
+  }
+
+  .content__main--Button{
+    margin:0px auto;
+    margin-left: 50%;
+  }
+
+  .carousel__wrapper{
+    display: block;
+  }
+
+  .carousel__content{
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel__content p {
+    font-size: 13px;
+  }
+
+  .carousel__img{
+    width: 100%;
+  }
+
+  .content__info--title {
+    font-size: 15px;
+  }
+
+  .content__info--link__questions span {
+    font-size: 12px;
+  }
+
+  .inf {
+    margin: 10px 0;
+  }
+
+  .inf a {
+    font-size: 13px;
+  }
+}

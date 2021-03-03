@@ -1,0 +1,246 @@
+.cards{
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: cards 300ms ease both;
+}
+
+.card_emty{
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: cards 300ms ease both;
+}
+
+@keyframes cards {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.card_emty a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  background: #43A047;
+  padding: 6px 37px;
+  border-radius: 5px;
+}
+
+.card_emty a:hover{
+  opacity: 0.8;
+}
+
+
+/*                   Table styles            */
+
+.table{
+  margin-top: 40px;
+}
+
+.table_header{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #eeeeee;
+}
+
+.table_content{
+  margin-top: 10px;
+  font-weight: 500;
+  background: #f2f2f2;
+}
+
+.table_content i:hover{
+  cursor: pointer;
+}
+
+.table_content--title{
+  display: flex;
+  align-items: center;
+}
+
+.table_content--price{
+  display: flex;
+  align-items: center;
+}
+
+.table_content--counter {
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+}
+
+.table_content--counter i {
+  font-size: 16px;
+}
+
+.table_content--counter span {
+  font-size: 20px;
+}
+
+.table_content--del{
+  display: flex;
+  align-items: center;
+}
+
+.table_content--allPrice{
+  padding-top: 15px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+
+/*                   FormOrder styles          */
+
+.formOrder{
+  margin-bottom: 60px;
+}
+
+.formOrder h5{
+  margin-bottom: 20px;
+}
+
+.formOrder__check{
+  font-weight: 500;
+}
+
+.formOrder__button{
+  margin-top: 15px;
+  padding: 7px 37px;
+  color: #ffffff;
+  background: #43A047;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0;
+}
+
+.ordering {
+  text-align: center;
+  margin:30px 0px;
+}
+
+.ordering_button {
+  margin-top: 20px;
+  border: 1px solid #43A047;
+  border-radius: 5px;
+  background: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  color: #43A047;
+  padding: 7px 15px;
+}
+
+@media (max-width: 1370px){
+  .container{
+    max-width: none;
+  }
+
+  .table{
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 992px){
+  .container{
+    max-width: none;
+  }
+
+  .table{
+    margin-top: 10px;
+  }
+
+  .ordering h4 {
+    font-size: 20px;
+  }
+
+  .ordering h5 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 760px){
+  .container{
+    max-width: none;
+  }
+
+  .table{
+    margin-top: 5px;
+    font-size: 17px;
+  }
+
+  .table .row{
+    flex-wrap: nowrap;
+  }
+
+  .table_content--allPrice{
+    font-size: 20px;
+  }
+
+  .ordering h4 {
+    font-size: 17px;
+  }
+  
+  .ordering h5 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 410px){
+  .col-12 .table_header{
+    display: none;
+  } 
+
+  .table_content .col-4{
+    flex: none;
+    max-width: none;
+    text-align: center;
+  }
+
+  .table_content .col-3{
+    flex: none;
+    max-width: none;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .table_content .table_content--price:before{
+    content: "(цена)";
+  }
+
+  .table_content .table_content--counter:before{
+    content: "(кол-во.)";
+  }
+
+  .table_content .col-2{
+    flex: none;
+    max-width: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .table_content .col-2:before{
+    content: "(удилть)";
+  }
+
+  .card__empty h1{
+    font-size: 30px;
+  }
+
+  .card__empty a{
+    font-size: 19px;
+    padding: 6px 10px;
+  }
+
+  .ordering h4 {
+    font-size: 15px;
+  }
+  
+  .ordering h5 {
+    font-size: 13px;
+  }
+}

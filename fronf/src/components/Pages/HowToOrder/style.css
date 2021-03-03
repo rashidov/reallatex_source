@@ -1,0 +1,292 @@
+.howToOrder__block {
+  color: #373737;
+  opacity: 0;
+  animation: howToOrder 300ms ease both;
+}
+
+@keyframes howToOrder {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.howToOrder__block--title {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.howToOrder__block--content__optionOrder {
+  text-align: center;
+}
+
+.howToOrder__block--content__optionOrder--title {
+  margin-bottom: 30px;
+}
+
+.howToOrder__block--content__optionOrder--content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actives {
+  color: #ffffff;
+  background: #43a047;
+}
+
+.noActive {
+  color: #43a047;
+  background: #efefef;
+}
+
+.howToOrder__block--content__optionOrder--content div {
+  display: flex;
+  width: 290px;
+  height: 50px;
+  padding:0px 10px;
+  margin: 0px 7px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.howToOrder__block--content__optionOrder--content i {
+  margin-right: 10px;
+}
+
+
+
+/* STYLES PHONE */
+
+.howToOrder__block--content__option--phone {
+  margin: 90px 0px;
+  opacity: 0;
+  animation: phone 300ms ease both;
+}
+
+@keyframes phone {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.option__phone__actOne {
+  flex-direction: column;
+}
+
+.option__phone--title__img img {
+  padding: 10px;
+}
+
+.option__phone--title__img {
+  width: 290px;
+  margin: 30px 50px;
+  border: 10px solid #efefef;
+  border-radius: 10px;
+}
+
+.option__phone--title__imgOrderName {
+  width: 660px;
+  margin: 30px 50px;
+  border: 10px solid #efefef;
+  border-radius: 10px;
+}
+
+/* ============ */
+
+
+
+/* STYLES SITE */
+
+.howToOrder__block--content__option--site {
+  margin: 90px 0px;
+  animation: site 300ms ease both;
+}
+
+@keyframes site {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.option {
+  margin: 50px 0px;
+  display: flex;
+}
+
+.option__site--title__num, .option__phone--title__num {
+  display: inline-block;
+  margin-right: 40px;
+  height: 47px;
+  width: 47px;
+  line-height: 47px;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #43a047;
+}
+
+.option__site--title__text, .option__phone--title__text {
+  font-size: 27px;
+}
+
+.option__site--title {
+  width: 55%;
+}
+
+.option__site--img {
+  width: 45%;
+  margin-top: 70px;
+  border: 10px solid #efefef;
+  border-radius: 10px;
+}
+
+.option__site--title .catalogBtn,
+.cardBtn, .cardsBtn, .cardAddCmt, .cardSenBtn,
+.homeBtn {
+  margin:30px 80px;
+  border: 10px solid #efefef;
+  border-radius: 10px;
+}
+
+.option__site--title .imgsBtnCrad {
+  display: flex;
+  width: 150px;
+  justify-content: center;
+  padding: 7px;
+  margin: 30px 80px;
+  border: 10px solid #efefef;
+  border-radius: 10px;
+}
+
+.line {
+  position: absolute;
+  width: 550px;
+  height: 30px;
+  margin: 170px 110px;
+  border-left: 2px dashed #efefef;
+  border-bottom: 2px dashed#efefef;
+}
+
+/* =========== */
+
+
+@media (max-width: 1370px){
+  .option__site--img img {
+    width: 400px;
+  }
+
+  .line {
+    width: 400px;
+  }
+
+  .brdrFive {
+    margin: 90px 110px;
+  }
+
+  .brdrEigth, .brdrSix {
+    margin: 200px 110px;
+  }
+}
+
+
+
+@media (max-width: 992px){
+  .option__site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .option__site--title {
+    width: 100%;
+  }
+
+  .option__site--img {
+    width: 100%;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+@media (max-width: 760px){
+  .howToOrder__block--content__option--phone {
+    text-align: center;
+  }
+
+  .option__phone--title__imgOrderName {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  .option__phone--title__imgOrderName img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px){
+  .howToOrder__block--title h2{
+    font-size: 20px;
+  }
+
+  .howToOrder__block--content__optionOrder--content {
+    flex-direction: column;
+  }
+
+  #button_phone {
+    margin-top: 10px;
+  }
+
+  .option__site--title__text, 
+  .option__phone--title__text {
+    font-size: 18px;
+  }
+
+  .option__site--img {
+    margin-top: 70px;
+  }
+
+  .option__site--img img {
+    width: 100%;
+  }
+
+  .cardBtn {
+    margin: 30px 50px;
+  }
+
+  .cardAddCmt {
+    margin: 30px 10px;
+  }
+
+  .cardSenBtn, .homeBtn {
+    margin: 30px 30px;
+  }
+}

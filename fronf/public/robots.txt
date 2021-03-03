@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /api/
+Disallow: /mail/
+Disallow: /manager/
+Disallow: /card/
+
+Host: reallatex.ru
+Sitemap: https://reallatex.ru/sitemap.xml
