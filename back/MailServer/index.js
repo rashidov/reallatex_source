@@ -11,7 +11,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-mongoose.connect('mongodb://localhost/reallatex', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb:-----', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use('/api', routes)
 
